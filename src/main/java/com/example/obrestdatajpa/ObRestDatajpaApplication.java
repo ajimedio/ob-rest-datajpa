@@ -20,6 +20,7 @@ public class ObRestDatajpaApplication {
 		Book book1 = new Book(null, "Homo Deus", "Yuval Noah", 450, 29.99, LocalDate.of(2018, 12, 1), true);
 		Book book2 = new Book(null, "Homo Sapiens", "Yuval Noah", 450, 19.99, LocalDate.of(2013, 12, 1), true);
 		// almacenar un libro
+		Book book3 = new Book(null, "Homo Sapiens", "Yuval Noah", 450, 19.99, LocalDate.of(2013, 12, 1), true);
 		System.out.println("Num libros en base de datos: " + repository.findAll().size());
 
 		repository.save(book1);
